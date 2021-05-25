@@ -71,3 +71,7 @@ ul {
 span {
     color: rgb(166, 93, 202);
 }
+
+#sinviñeta {
+    list-style-type: none;
+}
