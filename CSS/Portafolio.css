@@ -36,7 +36,7 @@ h3 {
 #fondo {
     width: 970px;
     height: 1150px;
-    background-color: silver;
+    background-color: rgb(228, 222, 222);
     margin: 20px;
     padding: 0px;
     display: inline-block;
@@ -49,6 +49,7 @@ h3 {
     margin: 0px;
     padding: 15px;
     display: inline-block;
+    background-image: radial-gradient(rgb(41, 11, 11), rgb(143, 112, 112), rgb(41, 11, 11));
 }
 
 #foto {
@@ -68,6 +69,7 @@ h3 {
     padding: 0px;
     display: inline-block;
     vertical-align: top;
+    background-image: linear-gradient(to right, white, rgb(150, 148, 148))
 }
 
 #lamode {
@@ -93,6 +95,7 @@ h3 {
     padding: 0px;
     display: inline-block;
     vertical-align: top;
+    background-image: linear-gradient(to right, white, rgb(150, 148, 148))
 }
 
 .lamode {
