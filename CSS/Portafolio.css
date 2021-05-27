@@ -43,7 +43,7 @@ h3 {
 }
 
 #subconten {
-    width: 970px;
+    width: 940px;
     height: 950px;
     background-color: rgb(80, 65, 65);
     margin: 0px;
@@ -58,16 +58,6 @@ h3 {
     padding: 10px;
     margin-top: 30px;
     display: inline-block;
-}
-
-#subcontenxzs {
-    width: 400px;
-    height: 250px;
-    display: inline-block;
-    background-color: rgb(80, 65, 65);
-    margin-top: 30px;
-    padding: 0px;
-    vertical-align: top;
 }
 
 #subconten1 {
