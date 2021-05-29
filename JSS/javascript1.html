@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 68 ::</title>
+    <script>
+        /*Ejercicios Javascript Basic*/
+        function a() {
+            return 35;
+        }
+        console.log(a()) // console log (35)
+            //respuesta:35
+            /*Ejercicio 2*/
+        function a() {
+            return 4;
+        }
+        console.log(a() + a()); //console log ((4)+(4))
+        //respuesta:8
+        /*Ejercicio 3*/
+        function a(b) {
+            return b;
+        }
+        console.log(a(2) + a(4)); // console.log (2+4)
+        //respuesta:6
+        /*Ejercicio 4*/
+        function a(b) { //b=3
+                
+            console.log(b);
+            return b * 3; //return 3*3
+        }
+        console.log(a(3)); //console.log(9)
+        //respuesta: 3,9
+        //*Ejercicio 5*/
+        function a(b) { //b=10
+            return b * 4; //return=10*4
+            console.log(b); //Nunca se va a ejecutar, porque el re torno me saca de la funcion
+        }
+        console.log(a(10)); // console.log (40)
+        //respuesta: 40
+
+        /*Ejercicio 6*/
+        function a(b) { //b=5
+            if (b < 10) { // No se ejecuta
+                return 2;
+            }    
+            else { // entonces  retorna el 4
+                return 4;
+            }
+            console.log(b); // nunca se va a ejecutar
+        }
+        console.log(a(15)); // console.log(4)
+        //respuesta: 4
+        /*Ejercicio 7*/
+        function a(b, c) { // b=3 y c=10
+            return b * c; // 3*10=30
+        }
+        console.log(10, 3);
+        console.log(a(3, 10)); //console.log(30)
+        //Respuesta: 10,3,30
+        /*Ejercicio 8*/
+        function a(b) {
+            for (var i = 0; i < 10; i++) {
+                console.log(i);
+            }
+            return i;
+        }
+        console.log(3);
+        console.log(4);
+        //Respuesta:3,4
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
