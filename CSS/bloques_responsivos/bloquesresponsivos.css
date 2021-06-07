@@ -1,0 +1,141 @@
+                                        * {
+                                            margin: 0px;
+                                            padding: 0px;
+                                        }
+                                        /*telefono*/
+                                        
+                                        @media only screen and (max-width: 480px) {
+                                            /* we will set these stylings only if the device is a screen with a width of 480px or less */
+                                            #wrapper {
+                                                width: auto;
+                                                background-color: white;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                            .header {
+                                                min-height: 5em;
+                                                width: 18em;
+                                                background-color: green;
+                                                margin: 10px;
+                                                padding: 20px;
+                                                vertical-align: middle;
+                                                margin-left: 12px;
+                                            }
+                                            .navigation {
+                                                display: none;
+                                            }
+                                            .main_content {
+                                                min-height: 5em;
+                                                ;
+                                                width: 97%;
+                                                background-color: red;
+                                                margin: 10px;
+                                                padding: 4px;
+                                            }
+                                            .subcontents {
+                                                min-height: 7em;
+                                                width: auto;
+                                                background-color: yellow;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                            #advertisement {
+                                                min-height: 5em;
+                                                width: auto;
+                                                background-color: purple;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                        }
+                                        /*tablet*/
+                                        
+                                        @media only screen and (min-width: 481px) and (max-width: 1023px) {
+                                            #wrapper {
+                                                width: auto;
+                                                background-color: white;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                            .header {
+                                                min-height: 5em;
+                                                width: auto;
+                                                background-color: green;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                            .navigation {
+                                                display: none;
+                                            }
+                                            .main_content {
+                                                min-height: 5em;
+                                                ;
+                                                width: 97%;
+                                                background-color: red;
+                                                margin: 0px;
+                                                padding: 4px;
+                                            }
+                                            .subcontents {
+                                                min-height: 11em;
+                                                width: 13em;
+                                                background-color: yellow;
+                                                margin: 10px;
+                                                padding: 10px;
+                                                vertical-align: top;
+                                                display: inline-block;
+                                            }
+                                            #advertisement {
+                                                min-height: 5em;
+                                                width: auto;
+                                                background-color: purple;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                        }
+                                        /*desktop*/
+                                        
+                                        @media only screen and (min-width: 1024px) {
+                                            #wrapper {
+                                                width: 96%;
+                                                background-color: silver;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                            .header {
+                                                min-height: 150px;
+                                                background-color: green;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                            .navigation {
+                                                min-height: 300px;
+                                                width: 200px;
+                                                background-color: blue;
+                                                display: inline-block;
+                                                vertical-align: top;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                            .main_content {
+                                                min-height: 400px;
+                                                width: 665px;
+                                                background-color: red;
+                                                display: inline-block;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                            .subcontents {
+                                                min-height: 170px;
+                                                width: 170px;
+                                                background-color: yellow;
+                                                display: inline-block;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                            #advertisement {
+                                                min-height: 120px;
+                                                width: 600px;
+                                                background-color: purple;
+                                                margin: 10px;
+                                                padding: 10px;
+                                            }
+                                        }
