@@ -99,6 +99,31 @@
 
         }
         console.log("resultado 5:" + encuentraElMayor([-3, -1, -5]));
+        /*Ejercicio 6*/
+
+        function avg(x) { // x=[1,3,5,7]
+            sum = 0;
+            for (let i = 0; i < x.length; i++) {
+                sum = sum + x[i];
+            }
+            /*var promedio = sum / x.length;
+            return promedio;*/
+            return sum / x.length;
+        }
+        y = avg([1, 3, 5, 7, 20]); //y=7.2
+        console.log(y); //7.2
+        /*Ejercicio 7*/
+        function impares() {
+            var array = [];
+            for (let i = 1; i <= 50; i += 2) {
+                array.push(i);
+            }
+            return array
+        }
+        y = impares();
+        console.log(y);
+
+        /*Ejercicio 8*/
     </script>
 </head>
 
@@ -110,7 +135,10 @@
             <li><b>Consigue pares hasta 1000:</b> Escribe una función que entregue la suma de todos los números pares del 1 al 1000 - Puedes usar un operador de módulo para este ejercicio. </li>
             <li><b>Suma impares hasta 5000:</b> Escribe una función que devuelva la suma de todos los números impares entre 1 y 5000 (ej: 1+3+5+...+4997+4999).</li>
             <li><b>Itera un array:</b> Escribe una función que devuelva la suma de todos los valores dentro de un array (ej: [1,2,5] retorna 8. [-5,2,5,12] retorna 14). </li>
-            <li><b>Encuentra el mayor (max</b>Dadu un Array con multiples valores, escribe una funcion que devuelva el numero mayor(eje:[-3,3,5,7] el numero mayoer (max) es 7</li>
+            <li><b>Encuentra el mayor (max)</b>Dado un Array con multiples valores, escribe una funcion que devuelva el numero mayor(eje:[-3,3,5,7] el numero mayoer (max) es 7</li>
+            <li><b>Encuentra el promedio (avg):</b> Dado un array con múltiples valores, escribe una función que devuelva el promedio de los valores (ej: para [1,3,5,7,20] el promedio es 7.2).</li>
+            <li><b>Array de impares:</b> Escribe una función que devuelva un array de todos los números impares entre 1 y 50 (ej: [1,3,5, …, 47,49]). Pista: Usa el método ‘push’.</li>
+            <li><b>Mayor que Y: </b>Dado un valor Y, escribe una función que toma un array y devuelve los valores mayores que Y. Por ejemplo, si arr = [1,3,5,7] y Y = 3, tu función devolverá 2 (hay 2 números en el array mayores que 3, esto son 5 y 7). </li>
         </ol>
     </div>
 </body>
