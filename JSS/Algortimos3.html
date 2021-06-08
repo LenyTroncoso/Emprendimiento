@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*Ejercicio1*/
+        function a(x, y) { //x=5; y=5
+            return 5;
+        }
+        console.log(a(5, 5))
+            //console.log(5);
+            //Respuesta:5
+            //Cuando insertemos a la base de datos es true o false
+
+        /*Ejercicio2*/
+        function a(x, y) { // x=2; y=2// x=6;y=8
+            let z = [2, 2, 5] // z.length= 0;tamaño o cantidad de elementos dentro del arreglo
+            z.push(x); //z.push(2) agrega al final del arreglo
+            z.push(y); //z.push(2) agrega al final del arreglo
+            z.push(5); //z.push(5) agrega al final del arreglo
+            console.log(z); //console.log([2,2,5]); console.log ([6,8,5])
+            return z; //return [2,2,5];// va donde llamaron la funcion que es en var b
+        }
+        b = a(2, 2) //sobreescritura, o asignacion de la funcion a para b
+            //b=[2,2,5];
+        console.log(b);
+        console.log(a(6, 8)); //console.log([6,8,5])
+
+        //respuesta: [2,2,5],[2,2,5],[6,8,5],[6,8,5]
+
+        /*Ejercicio 2.1*/
+        function alumnoAlAzar(arreglo) {
+            //ultimo= arreglo [arreglo.length-1]
+
+            var posicion = Math.random() * arreglo.length // 0-(arreglo.legth-1)//llega hasta el 30 ( 0-30)
+            var apellido = arreglo[posicion];
+            console.log("*** La o El elegido es:" + apellido)
+        }
+
+        var alumnos = ["insunza", "Vennik", "Salazar", "Hoyuela", "LDG", "Herrera", "Morales", "Lopez", "Fuentes", "Saldivia", "Toledo", "Reyes", "Gomez", "Troncoso", "Fabres", "Cayupi", "Henriquez"];
+        alumnoAlAzar(alumnos);
+
+        /*Ejercicio 3*/
+        function a(x) { // x=2
+            z = []; //[2,2]
+            z.push(x);
+            z.pop(); //elimina el ultimo valor del arreglo
+            z.push(x);
+            z.push(x);
+            return z; //[2,2]
+        }
+        y = a(2); //y=[2,2]
+        y.push(5); //y=[2,2,5]
+        console.log(y);
+        //respuesta: [2,2,5]
+
+        /*Ejercicio 4*/
+        function a(x) { //x=[2,3,4,5]
+            //x[0]=2;x[1]=3
+            if (x[0] < x[1]) { //2<3
+                return true; // se cumple, retorna true
+            } else {
+                return false;
+            }
+        }
+        b = a([2, 3, 4, 5]) // sobreescritura de la variable b// b=true
+        console.log(b);
+        //Respuesta:true
+
+        /*Ejercicio 5*/
+        function a(x) { // x=["Coding","Coding","Coding","Coding"];x.length=4
+            //
+            for (var i = 0; i < x.length; i++) { // i=0
+                if (x[i] > 0) { //1>0
+                    x[i] = "Coding";
+                }    
+            }    
+            return x; //["Coding","Coding","Coding","Coding"]
+        }
+        console.log(a([1, 2, 3, 4])) // console.log(["Coding","Coding","Coding","Coding"])
+
+        //Respuesta: ["Coding","Coding","Coding","Coding"]
+
+        /*Ejercicio 6*/
+        function a(x) { //: x=[5, "Coding", "Dojo", 4]; x.length=4
+
+            for (var i = 0; i < x.length; i++) { //i=0; i=1; i=2
+                if (x[i] > 5) { // x=[0]=5>5 no se cumple pasa a else; x[1]=7>5, se cumple se sobre escribe y se coloca  ""coding" en la posicion 1; x=[2]=-1>5,  es falso y  se pasa al else
+                    x[i] = "Coding";
+                } else if (x[i] < 0) { // 5<0 es falso no se cumple
+                    x[i] = "Dojo";
+                }    
+            }    
+            return x; //[5, "Coding", "Dojo", 4]
+        }
+        console.log(a([5, 7, -1, 4])) // console.log([5, "Coding", "Dojo", 4])
+
+        //Respuesta:[5, "Coding", "Dojo", 4]
+
+        /*Ejercicio 7*/
+        function a(x) { //x=[5,10]
+            if (x[0] > x[1]) { //5>10, falso
+                return x[1];
+            }
+            return 10;
+        }
+        b = a([5, 10]) //b=10
+        console.log(b); // console.log.(10)
+
+        //Respuesta:10
+
+        /*Ejercicio 8*/
+        function sum(x) {
+            sum = 0;
+            for (var i = 0; i < x.length; i++) {
+                sum = sum + x[i];
+                console.log(sum);
+            }
+            return sum;
+        }
+
+        //Respuesta: no se llamo a la funcion
+
+        /*Ejercicio 9*/
+        //Analiza los valores de un array y obtén el promedio (average) de esos valores.        
+        function printAverage(x) { // x=[1,2,3]
+            sum = 0;
+            for (let i = 0; i < x.length; i++) {
+                sum = sum + x[i];
+            }
+            /*var promedio = sum / x.length;
+            return promedio;*/
+            return sum / x.length;
+        }
+
+        function printAverage2(x) { //[2, 5, 8]
+            sum = 0; //1
+            for (let i = 0; i < x.length; i++) {
+                sum = sum + (x[i]) / 2;
+
+            }
+            /*opcion alternativa dividiso por la mitad de cada uno*/
+            y = printAverage([1, 2, 3]); //y=2
+            console.log(y); // should log 2
+
+            y = printAverage([2, 5, 8]); //y=5
+            console.log(y); // should log 5
+
+            /*Ejercicio 10*/
+            function returnOddArray() {
+                var array = [];
+                for (let i = 1; i <= 255; i += 2) {
+                    array.push(i);
+                }
+                return array;
+            }
+            y = returnOddArray(); // si no retornamos queda undefined
+            console.log(y); // should log [1,3,5,...,253,255]
+            //respuesta: [1,3,5,...,253,255]
+
+            /*Ejercicio 11*/
+            // lo que nos piden:eleva cada elemento del array dado al cuadrado y retorna el mismo arreglo
+            function squareValue(x) { //x=[1,2,3];
+                for (let i = 0; i < x.length; i++) {
+                    x[i] = x[i] * x[i];
+
+                }
+                return x; // return [1,4,9]
+            }
+            y = squareValue([1, 2, 3]);
+            console.log(y); // should log [1,4,9]
+
+            y = squareValue([2, 5, 8]);
+            console.log(y); // should log [4,25,64]
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
