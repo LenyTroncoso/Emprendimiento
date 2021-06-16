@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto::</title>
+    <script>
+        var Dany = ['Daenerys', 'Targaryen', 'House Targaryen', 'Valyrian', 'Queen of the Andals the Rhoynar and the First Men', 'Lady Regnant of the Seven Kingdoms', 'Protector of the Realm', 'Khaleesi of the Great Grass Sea', 'Breaker of Chains', 'Mother of Dragons', 'Queen of Meereen']
+        console.log(Dany[0] + "" + Dany[1]);
+        //objetos (caracteristicas o atributos)
+        //palabras:definicion o significado
+        //se cambia los [] po {}
+        var Dany = {
+            nombre: 'Daenerys',
+            apellido: 'Targaryen',
+            edad: 22,
+            titulos: ['Daenerys', 'Targaryen', 'House Targaryen', 'Valyrian', 'Queen of the Andals the Rhoynar and the First Men', 'Lady Regnant of the Seven Kingdoms', 'Protector of the Realm', 'Khaleesi of the Great Grass Sea', 'Breaker of Chains', 'Mother of Dragons', 'Queen of Meereen']
+
+
+        }
+        console.log(Dany.edad);
+        for (let i = 0; i < (Dany.titulo.length); i++);
+        console.log(Dany.titulos[i]);
+
+        //Ejercicio 2
+
+        var dojo = {}; // crea un objeto vacío
+        dojo = {
+                name: 'Coding Dojo', // la propiedad puede almacenar un string
+                number_of_students: 25, // la propiedad puede almacenar un número
+                instructors: ['Andrew', 'Michael', 'Jay'], // la propiedad puede almacenar arrays
+                location: { // ¡la propiedad puede incluso almacenar otro objeto!
+                    city: 'San Jose',
+                    state: 'CA',
+                    zipcode: 95112
+                }
+            } // accede a las propiedades del objeto con notación de punto (.)
+        console.log(dojo.name, dojo.number_of_students, dojo.instructors, dojo.location);
+        console.log(dojo["name"]); // o notación de [] corchete (nota: escribe la clave entre comillas)
+
+        //Ejercicio 2
+        // es un arrayd e objetos por los atributos y las llaves
+        var glazedDonuts = [{
+            frosting: 'glazed',
+            style: 'cake',
+            type: 'old fashioned',
+            age: '45',
+            time: 'minutes'
+        }, {
+            frosting: 'glazed',
+            style: 'yeast raised',
+            type: 'regular',
+            age: '5',
+            time: 'minutes'
+        }, {
+            frosting: 'glazed',
+            style: 'yeast raised',
+            type: 'jelly filled',
+            age: '1',
+            time: 'seconds'
+        }];
+        glazedDonuts.length = 3;
+        console.log(glazedDonuts[1].age)
+            //imprime 3 type
+        for (let i = 0; i < glazedDonuts.length; i++) {
+            console.log(glazedDonuts[i].type)
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

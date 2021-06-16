@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JQuery::</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //acceder a travez de la etiqueta, el signo $  me permite accceder al jquery
+            $('button').click(function() {
+                console.log("Estoy en  Clases");
+                alert("Estoy en  Clases");
+            });
+            //generico para todas las etiquetas del tipo
+            $('input').click(function() {
+                console.log("hoy juega Chile desde input");
+                alert("hoy juega Chile desde input");
+            });
+            // etiqueta.clase
+            //especificos para un tipo de elemento y su clase
+            $('input,input2').click(function() {
+                console.log("hoy juega Chile desde input");
+                alert("hoy juega Chile desde input");
+            });
+            // funcionalidad por clase
+            // se ejecuta
+            $('.input2').click(function() {
+                console.log("input por clase");
+                alert("input por clase");
+            });
+            // funcionalidad por id#, 
+            //solo para el elemento con el id
+            $('#input3').click(function() {
+                console.log("input por id");
+                alert("input por id");
+            });
+
+            /*ejercicio de Jquery*/
+            $('#input4').click(function() {
+                console.log($('#parrafo').text());
+                $('#parrafo').text("texto modificado por id");
+            });
+            /*fin Jquery*/
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <button>jquery</button>
+        <input type="button" value="boton 1">
+        <input type="button" value="boton 2" class="input2">
+        <input type="button" value="boton 3" id="input3">
+        <input type="button" value="cambiar parrafo" id="input4">
+        <p id="parrafo" class="input2">esto es un parrafo</p>
+    </div>
+</body>
+
+</html>

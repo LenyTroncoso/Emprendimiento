@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCIONES::</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            //$('').accion(function(){});
+            $('#boton1').click(function() {
+                console.log("Función click");
+                alert("Función click");
+            });
+            //hide
+            $('#boton2').click(function() {
+                $('#parrafo2').hide();
+            });
+            $('#parrafo2').click(function() {
+                $('#parrafo2').hide();
+            });
+            //show
+            $('#boton3').click(function() {
+                $('#parrafo2').show();
+            });
+            //toggle
+            $('#boton4').click(function() {
+                $('#parrafo2').toggle();
+            });
+            $('#boton5').click(function() {
+                $('#parrafo3').slideDown("slow");
+            });
+            $('#boton6').click(function() {
+                $('#parrafo3').slideUp("slow");
+            });
+            $('#boton7').click(function() {
+                $('#parrafo3').slideToggle();
+            });
+            $('#boton8').click(function() {
+                $("p").fadeIn();
+            });
+            $('#boton9').click(function() {
+                $("p").fadeOut();
+            });
+            $('#boton10').click(function() {
+                $('#parrafo5').addClass("ejemplo"); // preguntar como lo cambio
+            });
+            $('#boton11').click(function() {
+                $('#parrafo6').before("Evento");
+            });
+            $('#boton12').click(function() {
+                $('#parrafo6').after("salida");
+            });
+            $('#boton13').click(function() {
+                $('#parrafo7').append(" <b>Appended text</b>.");
+            });
+            $('#boton14').click(function() {
+                $("ol").append("<li>Appended item</li>");
+            });
+            $('#boton15').click(function() {
+                $('#parrafo8').html("Hello <b>world!</b>");
+            });
+            $('#boton16').click(function() {
+                $("img").attr("height", "500");
+            });
+            $('#boton17').click(function() {
+                $("input:text").val("atributo VAl");
+            });
+            $('#boton18').click(function() {
+                $('#parrafo10').text("TEXT insertar");
+            });
+            //fin JQuery    
+        });
+    </script>
+    <style>
+        .ejemplo {
+            color: red;
+            font-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>FUNCIÓN CLICK</h1>
+        <p>Clickea el botón para ejeutar el evento click</p>
+        <button id="boton1">Funcion click</button>
+        <hr>
+        <h1>FUNCIÓN HIDE, SHOW y TOGGLE</h1>
+        <p id="parrafo2">Clickea el botón para ejeutar el evento hide</p>
+        <button id="boton2">Funcion hide</button>
+        <button id="boton3">Funcion show</button>
+        <button id="boton4">Funcion toggle</button>
+        <hr>
+        <h1>FUNCIÓN slide down slide up, slide toogle</h1>
+        <p id="parrafo3">Clickea el botón para ejeutar el evento hide</p>
+        <button id="boton5">Funcion slide down</button>
+        <button id="boton6">Funcion  slide up </button>
+        <button id="boton7">Funcion toggle</button>
+        <hr>
+        <h1>FUNCIÓN Fadein</h1>
+        <p id="parrafo4">Clickea el botón para ejeutar el evento hide</p>
+        <button id="boton8"> funcion fadeIn</button>
+        <button id="boton9">Funcion  fadeout </button>
+        <hr>
+        <h1>FUNCIÓN Addclass</h1>
+        <p id="parrafo5">Clickea el botón para ejeutar el evento hide</p>
+        <button id="boton10"> funcion addclass</button>
+        <hr>
+        <h1>FUNCIÓN Before After</h1>
+        <p id="parrafo6">Clickea el botón para ejeutar el evento hide</p>
+        <button id="boton11"> funcion Before</button>
+        <button id="boton12"> funcion After</button>
+        <hr>
+
+        <h1>FUNCIÓN Append</h1>
+        <p id="parrafo7">Clickea el botón para ejeutar el evento </p>
+        <ol>
+            <li>lista1</li>
+            <li>lista2</li>
+            <li>lista3</li>
+        </ol>
+        <button id="boton13"> Append text</button>
+        <button id="boton14">Append list item </button>
+        <hr>
+        <h1>FUNCIÓN HTML</h1>
+        <p id="parrafo8">Clickea el botón para ejeutar el evento hide</p>
+        <button id="boton15"> devolver contenido HTML</button>
+        <hr>
+        <h1>FUNCIÓN attr</h1>
+        <img src="tux.jpg" alt="tux.jpg" width="150" height="150">
+        <button id="boton16"> atributo de imagen</button>
+        <hr>
+        <h1>FUNCIÓN val</h1>
+        <p id="parrafo9">Clickea <input type="text" name="user"> </p>
+        <button id="boton17"> boton val</button>
+        <hr>
+        <h1>FUNCIÓN text</h1>
+        <p id="parrafo10">Clickea el botón para ejeutar el evento hide</p>
+        <button id="boton18"> boton TEXT</button>
+    </div>
+</body>
+
+</html>
