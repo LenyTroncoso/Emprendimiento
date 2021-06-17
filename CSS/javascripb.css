@@ -28,7 +28,11 @@
     border-radius: 15px;
     padding: 10px;
     margin-right: 20px;
-    color: #3effff
+    color: #3effff;
+}
+
+.li::marker {
+    list-style-type: none;
 }
 
 #main_content {
