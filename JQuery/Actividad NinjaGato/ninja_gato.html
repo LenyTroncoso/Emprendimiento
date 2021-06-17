@@ -5,20 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUNCIONES::</title>
+    <title>Ninja Desapareciendo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $('document').ready(function() {
+            //$('').accion(function(){});
+            for (let i = 0; i <= 4; i++) {
+                $('#container').append('<img src="ninja' + i + '.png" alt-src="cat' + i + '.png">');
+                $('#container').append('<br>');
+            }
 
-
-            //fin Jquery
+            $('#container').after('<button>Restaurar</button>')
+                //desaparece la imagen
+            $('img').click(function() {
+                var temp = $(this).attr('src'); //obtener el contenido de src, asignando a temp
+                var contAltSrc = $(this).attr('alt-src');
+                $(this).attr('src', contAltSrc); //sobre escribimos src, con el contenido de alt-src
+                $(this).attr('alt-src', temp); //sobre escribimos alt-src, con el contenido de temp
+            });
+            $('button').click(function() {
+                    location.reload(); //recarga la pagina
+                })
+                //fin JQuery    
         });
     </script>
+
 </head>
 
 <body>
-    <div>
-
+    <div id="container">
 
     </div>
 </body>
