@@ -1,0 +1,83 @@
+Codeshare logo ShareSign UpLog In 1
+<!DOCTYPE html> 2
+<html lang="en">
+3 ​ 4
+
+<head>
+    5
+    <meta charset="UTF-8"> 6
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 7
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 8
+    <title>Document</title>
+    9
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    10
+    <script>
+        11
+        $(document).ready(function() {
+            12
+            //$('').click(function(){});
+            13
+            //append()-> agregar contenido dentro del elemento
+            14
+            //html()-> reemplaza todo el contenido
+            15
+            $('#container').append('<p>esto es un parrafo 1</p>');
+            16
+            $('#container').append('<p>esto es un parrafo 2</p>');
+            17
+            $('#container').append('<p id="unico">esto es un parrafo 3</p>');
+            18
+            $('#container').append('<p>esto es un parrafo 4</p>');
+            19
+            $('#container').append('<p>esto es un parrafo 5</p>');
+            20
+            //attr() ->agrega atributos al elemento(no todos tienen los mismos atributos)
+            21
+            $('#container').attr('name', 'principal');
+            22
+            //tambien puedo consultar el contenido del atributo
+            23
+            console.log($('#container').attr('class'));
+            24​
+            25
+            // tres formas de capturar el evento en un elemento
+            26
+            // etiqueta, class, id
+            27
+            $('p').click(function() {
+                28
+                //$(this), identifica la etiqueta que gatilla la accion 
+                29
+                $(this).text(); //text(), obtengo el contenido dentro de la etiqueta 
+                30
+                console.log(" Hola clase ", $(this).text());
+                31
+                $(this).attr('name', 'adry');
+                32
+                $(this).css('color', 'green');
+                33
+            });
+            34
+            //a traves del id, solo lo afecta a el 
+            35
+            $('#unico').click(function() {
+                36
+                //$(this).css('color', 'blue');
+                37
+                $('#unico').css('color', 'blue');
+                38
+            });
+            39
+        });
+        40
+    </script>
+    41
+    <style>
+        42 p {
+            43 color: blueviolet;
+            44
+        }
+        
+        45
+    </style>
