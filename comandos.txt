@@ -1,0 +1,79 @@
+Microsoft Windows [Versión 10.0.19041.1110]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\Roberto Castillo\Desktop\leny>cd ..
+
+C:\Users\Roberto Castillo\Desktop>mkdir mayra
+
+C:\Users\Roberto Castillo\Desktop>cd mayra
+
+C:\Users\Roberto Castillo\Desktop\mayra>touch index.html
+"touch" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\Roberto Castillo\Desktop\mayra>touch style.css
+"touch" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\Roberto Castillo\Desktop\mayra>type nul> index.hmtl
+
+C:\Users\Roberto Castillo\Desktop\mayra>type nul> style.css
+
+C:\Users\Roberto Castillo\Desktop\mayra>cp index.html copia.html
+"cp" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\Roberto Castillo\Desktop\mayra>cd ..
+
+C:\Users\Roberto Castillo\Desktop>mkdir destino
+
+C:\Users\Roberto Castillo\Desktop>mv index.html ../index.html
+"mv" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\Roberto Castillo\Desktop>cd mayra
+
+C:\Users\Roberto Castillo\Desktop\mayra>rm index.html
+"rm" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\Roberto Castillo\Desktop\mayra>ls
+"ls" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\Roberto Castillo\Desktop\mayra>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: C85F-60A6
+
+ Directorio de C:\Users\Roberto Castillo\Desktop\mayra
+
+21-07-2021  13:37    <DIR>          .
+21-07-2021  13:37    <DIR>          ..
+21-07-2021  13:37                 0 index.hmtl
+21-07-2021  13:37                 0 style.css
+               2 archivos              0 bytes
+               2 dirs  22.545.739.776 bytes libres
+
+C:\Users\Roberto Castillo\Desktop\mayra>cd ..
+
+C:\Users\Roberto Castillo\Desktop>cd destino
+
+C:\Users\Roberto Castillo\Desktop\destino>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: C85F-60A6
+
+ Directorio de C:\Users\Roberto Castillo\Desktop\destino
+
+21-07-2021  13:40    <DIR>          .
+21-07-2021  13:40    <DIR>          ..
+               0 archivos              0 bytes
+               2 dirs  22.545.440.768 bytes libres
+
+C:\Users\Roberto Castillo\Desktop\destino>rmdir destino
+El sistema no puede encontrar el archivo especificado.
+
+C:\Users\Roberto Castillo\Desktop\destino>cd ..
+
+C:\Users\Roberto Castillo\Desktop>rmdir destino
+
+C:\Users\Roberto Castillo\Desktop>
